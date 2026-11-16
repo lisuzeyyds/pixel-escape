@@ -1,0 +1,23 @@
+{
+  "name": "pixel-escape",
+  "version": "0.1.0",
+  "private": true,
+  "description": "《像素出逃》PIXEL ESCAPE — 一颗坏点穿越二十年界面史，逃出屏幕",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render PixelEscape out/pixel-escape.mp4",
+    "still": "remotion still PixelEscape out/still.png --frame=210",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "typescript": "5.6.3"
+  }
+}

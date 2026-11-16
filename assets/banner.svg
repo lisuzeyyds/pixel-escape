@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="1280" height="400" role="img" aria-label="像素出逃 PIXEL ESCAPE">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07070C"/>
+      <stop offset="0.55" stop-color="#0B0B12"/>
+      <stop offset="1" stop-color="#14141F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FF2431" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#FF2431" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FF2431" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000000" fill-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="400" fill="url(#bg)"/>
+  <rect width="1280" height="400" fill="url(#grid)"/>
+
+  <!-- 右侧：坏点所在的坐标区域 -->
+  <g opacity="0.5">
+    <path d="M980 0V400M1060 0V400M1140 0V400M1220 0V400" stroke="#FFFFFF" stroke-opacity="0.06"/>
+    <path d="M960 120H1280M960 200H1280M960 280H1280" stroke="#FFFFFF" stroke-opacity="0.06"/>
+  </g>
+  <circle cx="1110" cy="268" r="120" fill="url(#glow)"/>
+  <rect x="1096" y="254" width="28" height="28" fill="#FF2431"/>
+  <rect x="1096" y="254" width="28" height="28" fill="none" stroke="#FF7A84" stroke-opacity="0.55"/>
+
+  <!-- 左侧：文字 -->
+  <g font-family="Inter, 'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif">
+    <text x="88" y="150" font-size="26" fill="#FF2431" letter-spacing="10">PIXEL ESCAPE</text>
+    <text x="84" y="238" font-size="86" font-weight="700" fill="#F2F2F4" letter-spacing="6">像素出逃</text>
+    <text x="88" y="292" font-size="23" fill="#9A9AA8" letter-spacing="2">一颗坏点，用二十年界面史，逃出屏幕。</text>
+    <text x="88" y="340" font-size="18" fill="#5E5E6E" letter-spacing="4">9 STATIONS · 2'45" / 1'50" · 0 NARRATION · 1920×1080</text>
+  </g>
+
+  <rect width="1280" height="400" fill="url(#scan)" opacity="0.55"/>
+  <rect x="0.5" y="0.5" width="1279" height="399" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>
+</svg>
